@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block title %} Upload {% endblock %} 
+
+{% block content %}
+<h1>Upload Your MFP Data</h1>
+<form method="post" action="/" enctype="multipart/form-data">
+    {% csrf_token %} {{form.as_p}}
+    <button type="submit" , name="save">Submit</button>
+</form>
+
+{% if upload %}
+<iframe
+    src="http://localhost:3000/public-dashboards/7cd39c922497466ea1e5e1a8634092d0"
+    height=800
+    width=1000
+></iframe>
+{% endif %}
+
+{% endblock %}
