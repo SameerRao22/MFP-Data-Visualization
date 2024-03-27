@@ -1,3 +1,6 @@
+# MFP-Data-Visualization
+A simple website that accepts CSV exports from the MyFitnessPal app and renders nice visual representations using Grafana. 
+
 # Solution
 
 Takes the file as an input. Parses the file to create a simpler csv. Grafana dashboard is generated using the parsed csv file.
